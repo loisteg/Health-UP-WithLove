@@ -2,7 +2,10 @@
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
 // Определение операционной системы на мобильных
-import { burger } from './functions/burger';
+import { burger } from "./functions/burger";
+
+// Слайдеры slick-carousel
+import "./functions/sliders";
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';

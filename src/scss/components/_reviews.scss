@@ -1,0 +1,36 @@
+.reviews {
+  position: relative;
+  padding-top: 185px;
+
+  &-slider {
+    margin-top: 50px;
+    width: 1225px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-slide {
+    margin: 0;
+    margin-right: 10px;
+    width: 300px !important;
+    height: 550px !important;
+
+    div {
+      height: 100%;
+      width: 100%;
+      div {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
