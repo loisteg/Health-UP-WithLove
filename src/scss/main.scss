@@ -1,0 +1,17 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "animation";
+@import "titles";
+@import "buttons";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/first-screen";
+@import "./components/about";
+@import "./components/unique";
+@import "./components/charity";
+@import "./components/program";
+@import "./components/form";

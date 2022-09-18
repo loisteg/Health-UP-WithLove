@@ -1,0 +1,30 @@
+.charity {
+  padding-top: 185px;
+  padding-bottom: 40px;
+
+  &-wrapper {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-image {
+    margin-top: -150px;
+    width: 300px;
+    height: 395px;
+  }
+
+  &-info {
+    margin: 0;
+    width: 540px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--black);
+
+    span {
+      font-weight: 700;
+      color: var(--purple);
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.first-screen {
+  position: relative;
+  background: url("../../img//backgrounds/first-screen-background.png") right
+    center / cover no-repeat;
+  padding: 250px 0 90px 0;
+  &-pink,
+  &-purple {
+    position: absolute;
+    z-index: 0;
+  }
+  &-pink {
+    background: var(--pink);
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 444px;
+    height: 444px;
+    filter: blur(200px);
+  }
+  &-purple {
+    background: var(--purple);
+    top: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    filter: blur(87.5px);
+  }
+
+  &-grid {
+    display: grid;
+    grid-template: auto / 4fr 5fr;
+    place-items: center left;
+    padding-left: 25px;
+  }
+  &-title {
+    text-align: left;
+    span {
+      font-size: 46px;
+      text-transform: uppercase;
+    }
+  }
+  &-subtitle {
+    margin: 15px -35px 15px 0;
+    font-family: "Qwitcher Grypen";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 106px;
+    color: var(--pink);
+    transform: rotate(-5.11deg);
+    text-align: right;
+  }
+  &-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--black);
+    text-align: left;
+    span {
+      font-weight: 600;
+    }
+  }
+  &-buttons {
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(0, 0, 0, 0);
+    color: var(--black);
+    border: 2px solid var(--black);
+  }
+  &-from {
+    margin-top: -40px;
+    margin-left: 50px;
+    width: 272px;
+    height: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 0px 4px 71px 5px var(--pink);
+    border-radius: 40px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+  }
+}

@@ -1,0 +1,18 @@
+:root {
+  // base
+  --font-family: "Montserrat", sans-serif;
+  --content-width: 1060px;
+  --container-offset: 30px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white: #fff;
+  --black: #000;
+  --pink: #e71286;
+  --yellow: #ffda0e;
+  --purple: #b971f5;
+  --purple-lighter: #e1adfa;
+  --gradient-white: linear-gradient(#e71286, #e1adfa);
+  --gradient-pink: linear-gradient(180deg, #e71286 0%, #b971f5 100%);
+  --background-white: #fffdf3;
+}
