@@ -22,5 +22,9 @@ $(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="../img/icons/previous.png"></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><img src="../img/icons/next.png"></button>',
   });
 });
