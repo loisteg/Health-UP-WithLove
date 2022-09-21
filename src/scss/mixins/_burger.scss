@@ -6,13 +6,13 @@
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: white;
+  color: var(--pink);
   background-color: transparent;
   cursor: pointer;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     width: 100%;

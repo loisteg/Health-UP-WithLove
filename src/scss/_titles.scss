@@ -8,36 +8,15 @@
   color: var(--black);
 }
 
-.title--divider span {
-  position: relative;
+// @include tablet {
+//   .title {
+//     font-size: 28px;
+//     line-height: 24px;
+//   }
+// }
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    width: 100vw;
-    height: 2px;
-    background-color: #000;
-  }
-}
-
-.title--divider-right span::after {
-  left: 0;
-}
-
-.title--divider-left span::after {
-  right: 0;
-}
-
-@include tablet {
-  .title {
-    font-size: 28px;
-    line-height: 24px;
-  }
-}
-
-@include mobile {
-  .title {
-    font-size: 20px;
-  }
-}
+// @include mobile {
+//   .title {
+//     font-size: 20px;
+//   }
+// }
