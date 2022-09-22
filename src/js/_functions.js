@@ -7,6 +7,8 @@ import { burger } from "./functions/burger";
 // Слайдеры slick-carousel
 import "./functions/sliders";
 
+import { imageModal } from "./functions/images-modal";
+imageModal();
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
 // if (isDesktop()) {

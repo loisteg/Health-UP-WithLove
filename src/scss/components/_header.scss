@@ -4,7 +4,7 @@
   right: 0;
   top: 0;
   z-index: 2;
-  padding: 65px 0;
+  padding: 65px 100px;
 }
 
 // .header__wrapper {
@@ -13,7 +13,7 @@
 
 .header__layout {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 
   z-index: 2;
@@ -130,7 +130,7 @@
 
 .header__social-link {
   @include bg-cover;
-  @include mr(16px);
+  @include mr(24px);
 
   display: inline-block;
   width: 40px;
@@ -139,15 +139,15 @@
 }
 
 .header__social-link--inst {
-  background-image: url("../img/icon-inst.png");
+  background-image: url("../img/icons/instagram.svg");
 }
 
 .header__social-link--tg {
-  background-image: url("../img/icon-telegram.png");
+  background-image: url("../img/icons/telegram.svg");
 }
 
 .header__social-link--tiktok {
-  background-image: url("../img/icon-telegram.png");
+  background-image: url("../img/icons/tiktok.svg");
 }
 
 .header__burger {
