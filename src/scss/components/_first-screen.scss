@@ -1,7 +1,8 @@
 .first-screen {
   position: relative;
   background: url("../../img//backgrounds/first-screen-background.png") right
-    center / cover no-repeat;
+      center no-repeat,
+    var(--background-white);
   padding: 250px 0 90px 0;
   &-pink,
   &-purple {
@@ -36,7 +37,7 @@
   &-title {
     text-align: left;
     span {
-      font-size: 46px;
+      font-size: 34px;
       text-transform: uppercase;
     }
   }
@@ -91,5 +92,83 @@
     font-size: 24px;
     line-height: 29px;
     color: var(--black);
+  }
+}
+
+// mt102
+
+@media (max-width: 1150px) {
+  .first-screen {
+    &-grid {
+      position: relative;
+      grid-template: auto / 100%;
+      padding-left: 0;
+    }
+    &-title {
+      span {
+        font-size: 33px;
+      }
+    }
+    &-subtitle {
+      margin: -25px 0 0 0;
+      font-size: 94px;
+      line-height: 90px;
+      text-align: left;
+    }
+    &-description {
+      margin: 160px 0 0 0;
+    }
+    &-buttons {
+      align-items: flex-start;
+      flex-direction: column;
+
+      a {
+        &:last-child {
+          margin-top: 35px;
+        }
+      }
+    }
+
+    &-from {
+      position: absolute;
+      margin: 0;
+      top: 190px;
+      left: 0;
+      box-shadow: 0px 2px 37px 1px var(--pink);
+    }
+  }
+}
+
+@include tablet {
+  .first-screen {
+    padding: 110px 0 140px 0;
+    background: var(--background-white);
+
+    &-purple {
+      width: 100%;
+    }
+  }
+}
+
+@include mobile {
+  .first-screen {
+    &-pink {
+      transform: translate(-80%, -50%);
+    }
+    &-subtitle {
+      margin: -15px 0 0 0;
+      font-size: 83px;
+      line-height: 85px;
+      text-align: left;
+    }
+    &-description {
+      margin: 135px 0 0 0;
+    }
+    &-from {
+      position: absolute;
+      width: 260px;
+      margin: 0;
+      top: 150px;
+    }
   }
 }

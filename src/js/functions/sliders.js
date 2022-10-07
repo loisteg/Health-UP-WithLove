@@ -23,6 +23,15 @@ $(document).ready(function () {
       '<button type="button" class="slick-prev"><img src="../img/icons/previous.png"></button>',
     nextArrow:
       '<button type="button" class="slick-next"><img src="../img/icons/next.png"></button>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
   $(".reviews-slider").slick({
     infinite: false,

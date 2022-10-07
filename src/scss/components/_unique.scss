@@ -78,3 +78,63 @@
     }
   }
 }
+
+@include tablet {
+  .unique {
+    padding-top: 140px;
+
+    &-purple {
+      display: none;
+    }
+    &-yellow {
+      top: -241px;
+      left: -250px;
+      right: inherit;
+    }
+    &-pink {
+      display: none;
+    }
+    &-grid {
+      grid-template: auto / 75%;
+      place-content: center center;
+      gap: 25px 0;
+    }
+
+    &-item {
+      padding: 20px;
+      flex-direction: column;
+    }
+
+    &-info {
+      margin-top: 10px;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}
+
+@include mobile {
+  .unique {
+    &-yellow {
+      top: -172px;
+      left: -237px;
+      width: 338px;
+      height: 337px;
+    }
+
+    &-grid {
+      grid-template: auto / 100%;
+    }
+
+    &-info {
+      &-header {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &-description {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}

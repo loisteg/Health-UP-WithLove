@@ -129,3 +129,46 @@
     }
   }
 }
+
+@media (max-width: 1170px) {
+  .success-slick-slider {
+    width: 90%;
+    place-self: center;
+  }
+}
+
+@include tablet {
+  .success {
+    padding-top: 140px;
+
+    &-purple {
+      display: none;
+    }
+  }
+}
+
+// @include small-tablet {
+//   .success {
+//     &-grid {
+//       grid-template: auto auto / 100%;
+//       // place-content: center;
+//       gap: 50px 0;
+//     }
+//     &-slick-image {
+//       display: none;
+//     }
+//     &-slick-slider {
+//       .slick-track {
+//         width: 100% !important;
+//       }
+//     }
+//   }
+// }
+
+@include mobile {
+  .success {
+    &-title {
+      text-align: left;
+    }
+  }
+}
