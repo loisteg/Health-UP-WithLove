@@ -140,7 +140,11 @@
 
 @media (max-width: 1365px) {
   .header {
-    padding: 50px 50px;
+    padding: 50px;
+  }
+
+  .menu--active {
+    padding: 50px;
   }
 
   .header__logo {
@@ -176,8 +180,6 @@
   }
 
   .menu--active {
-    padding: 50px 30px 0;
-
     .header__menu-item {
       margin-right: 0;
       @include mb(40px);
@@ -211,7 +213,7 @@
   .menu--active {
     top: 0;
     height: 100%;
-    padding-top: 55px;
+    padding: 55px 25px 0;
   }
 
   .header__logo {

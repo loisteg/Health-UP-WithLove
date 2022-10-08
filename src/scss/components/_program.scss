@@ -18,6 +18,7 @@
     margin-top: 50px;
     padding: 0 65px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -79,13 +80,83 @@
       bottom: 30px;
       left: 25px;
       margin: 0;
-      margin-top: 100%;
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
       color: var(--pink);
     }
   }
+}
 
-  //padHoriz - 60px
+@media (max-width: 1240px) {
+  .program {
+    &-wrapper {
+      padding: 0;
+      flex-direction: column;
+    }
+    &-item {
+      &:last-child {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .program {
+    padding-top: 140px;
+
+    &-yellow {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .program {
+    &-title {
+      text-align: left;
+    }
+    &-wrapper {
+      margin-top: 30px;
+    }
+    &-item {
+      width: 315px;
+      height: 360px;
+      padding: 30px 20px;
+
+      &-image {
+        margin: 0 10px;
+        height: 80px;
+        width: 80px;
+      }
+
+      &-header {
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      &-subheader {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      &-list {
+        margin-top: 17px;
+        padding-left: 20px;
+        li {
+          margin-bottom: 0;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      &-additional {
+        bottom: 35px;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
 }

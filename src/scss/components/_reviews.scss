@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  //   padding-bottom: 60px;
 
   &-pink {
     position: absolute;
@@ -40,8 +39,7 @@
   }
 
   .slick-slide {
-    margin: 0;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
     width: 300px !important;
     height: 550px !important;
 
@@ -72,5 +70,68 @@
   }
   .slick-next {
     right: 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .reviews {
+    &-slider {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 500px;
+    }
+
+    .slick-list {
+      width: 500px;
+    }
+
+    .slick-slide {
+      margin: 0 20px 0 10px;
+      width: 500px !important;
+      height: 550px !important;
+    }
+
+    .slick-prev {
+      left: -15px;
+    }
+    .slick-next {
+      right: -5px;
+    }
+  }
+}
+
+@include tablet {
+  .reviews {
+    padding-top: 140px;
+
+    &-pink {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .reviews {
+    &-slider {
+      margin-top: 30px;
+      width: 300px;
+    }
+
+    .slick-list {
+      width: 300px;
+    }
+
+    .slick-slide {
+      margin: 0 20px 0 10px;
+      width: 300px !important;
+      height: 550px !important;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 45px;
+      height: 45px;
+    }
   }
 }

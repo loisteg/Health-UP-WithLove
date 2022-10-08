@@ -19,7 +19,7 @@ export const imageModal = () => {
       const modal = document.createElement("div");
       document.body.style.marginRight = `${scroll}px`;
       modal.style.top = `${window.pageYOffset}px`;
-      modal.classList.add("modal-image");
+      modal.classList.add("modal-image", "animated", "fadeIn");
       modal.innerHTML = `
         <div class="modal-image__wrapper">
           <div class="modal-image__close">X</div>
@@ -36,9 +36,13 @@ export const imageModal = () => {
           event.target &&
           (event.target === closeButton || event.target === modal)
         ) {
-          modal.remove();
+          modal.classList.remove("animated", "fadeIn");
+          modal.classList.add("animated", "fadeOut");
           document.body.style.overflow = "visible";
           document.body.style.marginRight = `0px`;
+          setTimeout(() => {
+            modal.remove();
+          }, 300);
         }
       });
     });

@@ -16,7 +16,6 @@ $(document).ready(function () {
     infinite: true,
     speed: 300,
     asNavFor: ".success-slick-image",
-    // dots: true,
     centerMode: true,
     focusOnSelect: true,
     prevArrow:
@@ -29,6 +28,7 @@ $(document).ready(function () {
         settings: {
           slidesToScroll: 1,
           slidesToShow: 1,
+          asNavFor: null,
         },
       },
     ],
@@ -42,5 +42,15 @@ $(document).ready(function () {
       '<button type="button" class="slick-prev"><img src="../img/icons/previous.png"></button>',
     nextArrow:
       '<button type="button" class="slick-next"><img src="../img/icons/next.png"></button>',
+    responsive: [
+      {
+        breakpoint: 1539,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          infinite: true,
+        },
+      },
+    ],
   });
 });

@@ -14,7 +14,11 @@
     opacity: 1;
   }
 }
-.animate__fadeIn {
+.animated {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+.fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -34,7 +38,7 @@
     opacity: 0;
   }
 }
-.animate__fadeOut {
+.fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
