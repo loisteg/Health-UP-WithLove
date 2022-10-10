@@ -7,8 +7,14 @@ import { burger } from "./functions/burger";
 // Слайдеры slick-carousel
 import "./functions/sliders";
 
+// Изображение модальных окон
 import { imageModal } from "./functions/images-modal";
 imageModal();
+
+// Для работы с формами
+import "./functions/send-form-info";
+import mask from "./functions/mask";
+mask('[name="phone"]');
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
 // if (isDesktop()) {
@@ -58,8 +64,8 @@ imageModal();
 // });
 
 // Подключение анимаций по скроллу
-// import AOS from 'aos';
-// AOS.init();
+import AOS from "aos";
+AOS.init();
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';
