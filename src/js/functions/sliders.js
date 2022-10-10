@@ -19,9 +19,9 @@ $(document).ready(function () {
     centerMode: true,
     focusOnSelect: true,
     prevArrow:
-      '<button type="button" class="slick-prev"><img src="../img/icons/previous.png"></button>',
+      '<button type="button" class="slick-prev"><img src="./img/icons/previous.png"></button>',
     nextArrow:
-      '<button type="button" class="slick-next"><img src="../img/icons/next.png"></button>',
+      '<button type="button" class="slick-next"><img src="./img/icons/next.png"></button>',
     responsive: [
       {
         breakpoint: 768,
@@ -39,9 +39,9 @@ $(document).ready(function () {
     slidesToShow: 4,
     slidesToScroll: 4,
     prevArrow:
-      '<button type="button" class="slick-prev"><img src="../img/icons/previous.png"></button>',
+      '<button type="button" class="slick-prev"><img src="./img/icons/previous.png"></button>',
     nextArrow:
-      '<button type="button" class="slick-next"><img src="../img/icons/next.png"></button>',
+      '<button type="button" class="slick-next"><img src="./img/icons/next.png"></button>',
     responsive: [
       {
         breakpoint: 1539,
