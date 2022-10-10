@@ -527,8 +527,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     asNavFor: ".success-slick-image",
     centerMode: true,
     focusOnSelect: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/previous.png"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next.png"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="./img/icons/previous.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="./img/icons/next.png"></button>',
     responsive: [{
       breakpoint: 768,
       settings: {
@@ -543,8 +543,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
-    prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/previous.png"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next.png"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="./img/icons/previous.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="./img/icons/next.png"></button>',
     responsive: [{
       breakpoint: 1539,
       settings: {
