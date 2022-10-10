@@ -65,7 +65,9 @@ mask('[name="phone"]');
 
 // Подключение анимаций по скроллу
 import AOS from "aos";
+import addAttributes from "./functions/add-attributes";
 AOS.init();
+addAttributes();
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';

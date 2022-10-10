@@ -110,6 +110,12 @@
   width: 40px;
   height: 40px;
   background-size: contain;
+  transform: scale(1);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .header__social-link--inst {

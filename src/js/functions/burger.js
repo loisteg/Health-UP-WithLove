@@ -26,6 +26,7 @@ import { enableScroll } from "../functions/enable-scroll";
       burger?.setAttribute("aria-expanded", "false");
       burger?.setAttribute("aria-label", "Открыть меню");
       burger.classList.remove("header__burger--active");
+      menu.classList.remove("menu--active");
       enableScroll();
     });
   });

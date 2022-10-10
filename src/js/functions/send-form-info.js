@@ -7,9 +7,6 @@ $("#form").on("submit", function (e) {
   const CHAT_ID = "-1001835023595";
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
-  //   const success = document.querySelector(".success"),
-  //     failure = document.querySelector(".failure");
-
   let name = document?.querySelector('[name="name"]'),
     phone = document?.querySelector('[name="phone"]'),
     telegram = document?.querySelector('[name="telegram"]');

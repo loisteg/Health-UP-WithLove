@@ -4,6 +4,7 @@
       center no-repeat,
     var(--background-white);
   padding: 250px 0 90px 0;
+
   &-pink,
   &-purple {
     position: absolute;
@@ -94,8 +95,6 @@
     color: var(--black);
   }
 }
-
-// mt102
 
 @media (max-width: 1150px) {
   .first-screen {
