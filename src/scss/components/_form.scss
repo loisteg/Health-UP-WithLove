@@ -17,14 +17,14 @@
     filter: blur(173.5px);
   }
 
-  &__yellow {
-    bottom: -150px;
-    right: 150px;
-    width: 435px;
-    height: 420px;
-    background: var(--yellow);
-    filter: blur(116px);
-  }
+  // &__yellow {
+  //   bottom: -150px;
+  //   right: 150px;
+  //   width: 435px;
+  //   height: 420px;
+  //   background: var(--yellow);
+  //   filter: blur(116px);
+  // }
 
   &__wrapper {
     margin-top: 30px;
@@ -82,13 +82,13 @@
       filter: blur(80px);
     }
 
-    &__yellow {
-      bottom: -50px;
-      right: -100px;
-      width: 200px;
-      height: 200px;
-      filter: blur(50px);
-    }
+    // &__yellow {
+    //   bottom: -50px;
+    //   right: -100px;
+    //   width: 200px;
+    //   height: 200px;
+    //   filter: blur(50px);
+    // }
   }
 }
 
